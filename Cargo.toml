@@ -24,6 +24,10 @@ path = "src/day4.rs"
 name = "day7"
 path = "src/day7.rs"
 
+[[bin]]
+name = "day8"
+path = "src/day8.rs"
+
 [lib]
 name = "aoc2024"
 path = "src/lib.rs"
