@@ -9,7 +9,7 @@ const SEEN: char = '✨';
 const FREE: char = '⬛';
 
 fn main() {
-    let text = fs::read_to_string("inputs/day6.txt").expect("File is not Found");
+    let text = fs::read_to_string("inputs/day6_test.txt").expect("File is not Found");
     let mut map = parse_input(&text);
 
     search_map(&mut map);
@@ -58,7 +58,7 @@ fn search_map(map: &mut Vec<Vec<char>>) {
             "👀: {}",
             format_with_color(&seen_positions.len().to_string(), "blue")
         );
-        // thread::sleep(Duration::from_secs(1));
+        thread::sleep(Duration::from_secs(1));
     }
 }
 
